@@ -1,8 +1,9 @@
-- name: Start service kubelet, if not started
-  service:
-    name: kubelet
-    state: started
-- name: Enable service kubelet to start on start or reboot
-  service:
-    name: kubelet
-    state: enabled
+tasks
+  - name: Start service kubelet, if not started
+    service:
+      name: kubelet
+      state: started
+  - name: Enable service kubelet to start on start or reboot
+    service:
+      name: kubelet
+      state: enabled
