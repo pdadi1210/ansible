@@ -1,0 +1,5 @@
+- name: Start service kubelet, if not started
+  service:
+    name: kubelet
+    state: started
+    enabled: yes
