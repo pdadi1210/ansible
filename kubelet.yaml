@@ -2,4 +2,3 @@
   service:
     name: kubelet
     state: started
-    enabled: yes
